@@ -1,12 +1,13 @@
 body{
     background: rgb(2,0,36);
     background: linear-gradient(191deg, rgba(2,0,36,1) 0%, rgba(152,82,115,1) 76%, rgba(255,0,153,1) 100%);
-    font-family: fantasy;
+    font-family: 'Teko', sans-serif;
 }
 h1{
     font-size: 150px;
     color: aliceblue;
-        text-align: center
+        text-align: center;
+    height: 80px;
 }
 p{
     color: aliceblue;
