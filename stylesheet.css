@@ -1,0 +1,29 @@
+body{
+    background: rgb(2,0,36);
+    background: linear-gradient(191deg, rgba(2,0,36,1) 0%, rgba(152,82,115,1) 76%, rgba(255,0,153,1) 100%);
+    font-family: fantasy;
+}
+h1{
+    font-size: 150px;
+    color: aliceblue;
+        text-align: center
+}
+p{
+    color: aliceblue;
+    text-align: center
+}
+div{
+    text-align: center
+}
+
+img{
+    max-width: 100px;
+    max-height: 150px;
+    text-align: center
+}
+
+footer{
+    color:rgb(215, 210, 233);
+    text-align: center;
+    height: 470px;
+}
