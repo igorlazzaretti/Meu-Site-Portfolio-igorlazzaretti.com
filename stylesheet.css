@@ -5,22 +5,33 @@ body{
 }
 h1{
     font-size: 150px;
-    color: aliceblue;
+    color: rgb(255, 249, 255);
         text-align: center;
     height: 80px;
+
+}
+h1:hover{
+    color: rgb(255, 255, 255);
 }
 p{
     color: aliceblue;
     text-align: center
 }
 div{
-    text-align: center
+    text-align: center;
+    min-width: 50px;
 }
+
 
 img{
     max-width: 100px;
     max-height: 150px;
     text-align: center
+}
+img:hover{
+    transform: scale(1.4);
+    transition: 0.4s;
+
 }
 
 footer{
