@@ -1,8 +1,28 @@
+
 body{
-    background: rgb(2,0,36);
-    background: linear-gradient(191deg, rgba(2,0,36,1) 0%, rgba(152,82,115,1) 76%, rgba(255,0,153,1) 100%);
-    font-family: 'Teko', sans-serif;
-}
+        font-family: 'Teko', sans-serif;
+    } 
+.color-change-2x {
+      -webkit-animation: color-change-2x 10s ease-in-out infinite alternate both;
+                animation: color-change-2x 10s ease-in-out infinite alternate both;
+    }
+    @-webkit-keyframes color-change-2x {
+        0% {
+          background: #19dcea;
+        }
+        100% {
+          background: #b22cff;
+        }
+      }
+      @keyframes color-change-2x {
+        0% {
+          background: #19dcea;
+        }
+        100% {
+          background: #b22cff;
+        }
+      }
+      
 h1{
     font-size: 150px;
     color: rgb(255, 249, 255);
