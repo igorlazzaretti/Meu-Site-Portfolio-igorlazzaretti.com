@@ -1,7 +1,11 @@
+/* fonts */
 @import url('https://fonts.googleapis.com/css2?family=Finger+Paint&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Creepster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Paytone+One&display=swap');
 
+/* css */
 body{
-        font-family: "Finger Paint", sans-serif;
+  font-family: 'Paytone One', sans-serif;
     } 
 .color-change-2x {
       -webkit-animation: color-change-2x 10s ease-in-out infinite alternate both;
