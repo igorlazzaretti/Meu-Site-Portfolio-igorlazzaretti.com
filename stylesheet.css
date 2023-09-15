@@ -1,6 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Finger+Paint&display=swap');
 
 body{
-        font-family: 'Teko', sans-serif;
+        font-family: "Finger Paint", sans-serif;
     } 
 .color-change-2x {
       -webkit-animation: color-change-2x 10s ease-in-out infinite alternate both;
