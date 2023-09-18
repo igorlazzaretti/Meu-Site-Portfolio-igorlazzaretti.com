@@ -1,0 +1,35 @@
+/* instruções iniciais, reset de estilos e fonte */
+* { box-sizing: border-box;
+    margin: 0; padding: 0;
+    font-family:'Montserrat', sans-serif;}
+header{     /* margens do header */
+               margin: 44px 0 144px 76px; }
+.link-header{  font-weight: 600;
+               font-size: 24px;
+               color: #989D9C; margin-left: 20px;}
+#button-header{  color: rgb(255, 255, 255); background-color: #665AE1;
+                 font-weight: 600; font-size: 24px;
+                 width: 130px; height: 41px;
+                 border-radius: 20.5px; border:none;
+                 margin-left: 20px; }
+#logo-image{ /* estabeleço tamanho da imagem */
+    width: 568px; height: 500px; margin-left: 125px; display: inline-block;}  
+
+#main-section{
+    display: inline-block; width: 600px; margin-left: 76px;}
+h1{ color: #515151;    font-size: 100px;    font-weight: 900; }
+h2{ color: #515151;    font-size: 58px;    font-weight: 500; 
+    margin-bottom: 20px;  }
+p { color: #848484;    font-size: 24px;    font-weight: 400; 
+    text-align: justify; margin-bottom: 40px;}
+#button{ border-radius: 20.5px;  background: #ADFF00; border: none; 
+         width: 239px; height: 64px;  
+         /* drop shadow drop-shadow(offset-x offset-y blur-radius color) */
+         filter: drop-shadow(10px 10px 10px #d4d4d4);
+         color: #000000bb;    font-size: 28px;    font-weight: 700;}
+footer{ margin-top: 160px; text-align: center;}
+/* Ao passar o cursos sobre o  hover */ 
+.link-header:hover{
+    transition: 0.8s; text-decoration: underline; color: #515151;}
+#button:hover,#button-header:hover{
+    transition: 1s; color: #3a3b3b; transform: scale(1.2);} 
