@@ -32,7 +32,8 @@ h1{
     font-size: 150px;
     color: rgb(255, 249, 255);
         text-align: center;
-    height: 80px;
+        
+    height: 90px;
 
 }
 h1:hover{
@@ -59,26 +60,16 @@ img{
 }
 img:hover{
     transform: scale(1.4);
-    transition: 0.4s;
-
+    transition: 0.6s;
 }
-
 footer{
     color:rgb(215, 210, 233);
     text-align: center;
 }
 #live{
-  height: 700px;
+  height: 35px;
 }
-#video {
-
-    position: absolute;
+#video{ display: grid;
+justify-items: center;
+align-items: start;}
     
-    top: 100%;
-    
-    left: 50%;
-    
-    transform: translate(-50%, -50%);
-    
-    
-    }
