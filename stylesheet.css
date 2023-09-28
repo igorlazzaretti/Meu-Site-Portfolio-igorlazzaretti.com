@@ -6,7 +6,7 @@ body{
 #loguinhos{text-align: right;
   min-width: 30px; width: auto; margin-top: 0px;justify-content: center;}
 header{align-items: center;display: flex;justify-content: center;padding-left: 13px; padding-right: 13px; border-bottom: 10px; border-bottom: 2px solid rgb(201, 120, 238);}
-#header-site{align-items: center; margin-right:auto; inline;justify-content: center; font-size: 2vw;}
+#header-site{align-items: center; margin-right:auto; inline;justify-content: center; font-size: 3.5vw;width: 1rem;}
 #header-site:visited{text-decoration: none; color: aliceblue; text-decoration-color: black;}
 #header-site:hover{color: blueviolet;}
 h1{
