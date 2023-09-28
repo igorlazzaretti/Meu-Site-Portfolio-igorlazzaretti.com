@@ -1,0 +1,20 @@
+*{ background-color: black;
+padding: none;
+display: block;
+align-items: center;}
+button{
+    border-width: 4x;
+ border-color: blueviolet;
+ color: rgb(185, 185, 185);
+width: 400px;
+height: 400px;
+border-radius: 100%;
+margin-bottom: 400px;
+margin-top: 15%;
+margin-left: auto;
+margin-right: auto;
+}
+button:hover{
+    border-color: rgb(201, 120, 238);
+    box-shadow: 0px 5px 1000px rgb(32, 76, 196);
+}
