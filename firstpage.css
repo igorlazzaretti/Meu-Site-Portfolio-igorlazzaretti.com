@@ -16,8 +16,8 @@ font-size: 23px;
     } 
 button{
     border-width: 4x;
- border-color: blueviolet;
- color: rgb(255, 255, 255);
+ border-color: rgb(83, 19, 143);
+ color: rgb(112, 112, 112);
 width: 400px;
 height: 400px;
 border-radius: 100%;
@@ -30,9 +30,14 @@ margin-right: auto;
 button:hover{
     border-color: rgb(201, 120, 238);
     box-shadow: 0px 5px 1000px rgb(32, 76, 196);
+    color: rgb(255, 255, 255)
 }
 button:visited{
     border-color: rgb(201, 120, 238);
-    box-shadow: 0px 5px 1000px rgb(32, 76, 196)
-    ;text-decoration: none;
+    box-shadow: 0px 5px 10000px rgb(32, 76, 196)
+    ;text-decoration-color: black;
 }
+button:onclick{
+text-decoration: none;
+}
+a:link {text-decoration: none;}
