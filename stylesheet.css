@@ -6,7 +6,7 @@ body{
 .header-site{color: aliceblue; text-decoration: none; }
 #loguinhos{text-align: right;
   min-width: 30px; width: auto; margin-top: 0px;justify-content: center;}
-header{align-items: center; auto; display: flex;justify-content: center;padding-left: 13px; padding-right: 13px;}
+header{align-items: center; auto; display: flex;justify-content: center;padding-left: 13px; padding-right: 13px; border-bottom: 10px; border-bottom: 3px solid rgb(101, 33, 139);}
 #header-site{align-items: center; margin-right:auto; inline;justify-content: center;}
 #header-site:visited{text-decoration: none; color: aliceblue; text-decoration-color: black;}
 h1{
@@ -24,7 +24,8 @@ div{
 button{
   display: block;
   margin-left: auto;
-  margin-right: auto;  }
+  margin-right: auto;  color:white; background-color: black; border: solid rgb(101, 33, 139); margin-bottom: 12px;}
+  button:hover{ background-color: blueviolet;}
 img{
     max-width: 100px; max-height: 34px; text-align: center;  }
 img:hover{
