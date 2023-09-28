@@ -6,33 +6,33 @@ body{
 #loguinhos{text-align: right;
   min-width: 30px; width: auto; margin-top: 0px;justify-content: center;}
 header{align-items: center; auto; display: flex;justify-content: center;padding-left: 13px; padding-right: 13px; border-bottom: 10px; border-bottom: 2px solid rgb(201, 120, 238);}
-#header-site{align-items: center; margin-right:auto; inline;justify-content: center; font-size: 25px;}
+#header-site{align-items: center; margin-right:auto; inline;justify-content: center; font-size: 3vw;}
 #header-site:visited{text-decoration: none; color: aliceblue; text-decoration-color: black;}
 #header-site:hover{color: blueviolet;}
 h1{
-    font-size: 80px;
+    font-size: 5vw;
     color: rgb(255, 249, 255);
         text-align: center;  height: 40px;   }
 h1:hover{
     color: rgb(255, 255, 255);   }
 h2, p{
     color: aliceblue;
-    text-align: center;  }
+    text-align: center; font-size: 2vw; }
 div{
     text-align: center;
     min-width: 50px;  }
 button{ font-family: 'Paytone One', sans-serif;
   display: block;
   margin-left: auto;
-  margin-right: auto;  color:white; background-color: black; border: solid rgb(101, 33, 139); margin-bottom: 12px; width: 280px; height: 60px; font-size: 20px;}
+  margin-right: auto;  color:white; background-color: black; border: solid rgb(101, 33, 139); margin-bottom: 12px; width: 50%; height: 60px; font-size: 2vw;}
   button:hover{ background-color: blueviolet;}
 img{
     max-width: 150px; height: 55px; text-align: center;  }
 img:hover{
     transform: scale(1.4);
     transition: 0.6s;  }
-p{font-size: 50px;}
-footer{ font-size: 25px;
+p{font-size: 2vw;}
+footer{ font-size: 2vw;
     color:rgb(215, 210, 233);
     text-align: center; justify-items: center;
     align-items: center; margin-bottom: 20px;}
