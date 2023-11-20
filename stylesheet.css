@@ -8,7 +8,7 @@ body{
 header{align-items: center;display: flex;justify-content: center;padding-left: 13px; padding-right: 13px; border-bottom: 10px; border-bottom: 2px solid rgb(201, 120, 238);}
 #header-site{align-items: center; margin-right:auto; inline;justify-content: center; font-size: 3.5vw;width: 1rem;}
 #header-site:visited{text-decoration: none; color: aliceblue; text-decoration-color: black;}
-#header-site:hover{color: blueviolet;}
+#header-site:hover{color: rgba(84,54,236,1);}
 h1{
     font-size: 4rem;
     color: rgb(255, 249, 255);
@@ -25,7 +25,7 @@ button{ font-family: 'Paytone One', sans-serif;
   display: block;
   margin-left: auto;
   margin-right: auto;  color:white; background-color: black; border: solid rgb(101, 33, 139); margin-bottom: 12px; width: 60%; height: 100%; font-size: 2rem;}
-  button:hover{ background-color: blueviolet;}
+  button:hover{ background: linear-gradient(90deg, rgba(174,13,191,1) 33%, rgba(84,54,236,1) 97%); color: rgb(206, 198, 247);}
 img{
     max-width: 120%; height: 4svw; min-height: 35px; text-align: center;  }
 img:hover{
