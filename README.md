@@ -1,8 +1,9 @@
-# Meu Site Portfólio / My Portfolio Website
-Bom dia, boa tarde, boa noite
-Estou feliz em criar meu primeiro repositório Git & GitHub e decidi compartilhar meu website com vocês. 
-Obrigado e sucesso!
-//
-Morging, Aferton and Night
-I'm Happy to create my first Git GitHub repository and i decided to share my personal website with you guys.
-Thx and sucess
+# Responsive Portfolio Website Boné
+
+### Responsive Portfolio Website Boné
+
+Responsive Portfolio Website Using HTML, CSS and JavaScript, With a beautiful user interface. It contains a Header, Home, About, Skills, Qualification, Services, Portfolio, Project in mind, Testimonial, Contact and Footer. It also has a fully developed light/dark mode 🌓 first for mobile then for desktop.
+
+## Preview 💻
+
+![Resume cv](preview.png)
