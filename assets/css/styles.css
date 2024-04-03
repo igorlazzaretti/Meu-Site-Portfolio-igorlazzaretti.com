@@ -741,7 +741,8 @@ img {
 }
 
 .portfolio__img {
-  width: 265px;
+  height: 260px;
+  object-fit: cover;
   border-radius: 0.5rem;
   justify-content: center;
 }
