@@ -2,7 +2,7 @@ const targetElement = document.getElementById("text");
 const texts = [
         "Olá! Eu sou Igor",
         "Hello! I am Igor",
-        "Hola! Soy Igor",
+        "¡Hola! Soy Igor",
         "Ciao! Sono Igor",
     ];
 
@@ -15,7 +15,7 @@ setInterval(function(){
     if(textConfirm == false){
 
         targetElement.textContent = targetElement.textContent.replace("|","");
-        targetElement.innerHTML += texts[index][countIndex] +"|";
+        targetElement.innerHTML += texts[index][countIndex] +"";
         countIndex++;
 
         if(countIndex == countText.length){
