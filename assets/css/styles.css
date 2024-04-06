@@ -278,8 +278,8 @@ img {
 }
 
 .home__content {
-  grid-template-columns: 0.5fr 3fr;
-  padding-top: 3.5rem;
+  grid-template-columns: 0.5fr 2fr;
+  padding-top: 3rem;
   align-items: center;
 }
 
@@ -299,7 +299,7 @@ img {
 }
 
 .home__blob {
-  width: 200px;
+  width: 300px;
   fill: var(--first-color);
 }
 
@@ -313,6 +313,9 @@ img {
 
 .home__title {
   font-size: var(--big-font-size);
+  width: 340px;
+  height: 150px;
+  align-self: center;
 }
 
 .home__subtitle {

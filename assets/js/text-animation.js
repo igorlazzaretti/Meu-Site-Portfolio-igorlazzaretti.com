@@ -1,9 +1,9 @@
 const targetElement = document.getElementById("text");
 const texts = [
-        "Olá! Eu sou Igor",
-        "Hello! I am Igor",
-        "¡Hola! Soy Igor",
-        "Ciao! Sono Igor",
+        "Olá! Eu sou Igor.",
+        "Hello! I am Igor.",
+        "¡Hola! Soy Igor.",
+        "Ciao! Sono Igor.",
     ];
 
 let textConfirm = false;
@@ -37,7 +37,7 @@ setInterval(function(){
         }
     }
 
-    if(index>=3){
+    if(index>=4){
         index = 0;
     }
 },100);
