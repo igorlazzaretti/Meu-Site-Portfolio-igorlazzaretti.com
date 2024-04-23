@@ -1,0 +1,18 @@
+.underline {
+    text-decoration: none;
+    position: relative;
+  }
+  /* Animação After e Hover */
+  .underline:after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    bottom: -3px;
+    left: 0px;
+    position: absolute;
+    background-color: #6e57e0;
+    transition: 0.3s ease;
+  }
+  .underline:hover:after {
+    width: 100%;
+  }
