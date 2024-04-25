@@ -301,7 +301,7 @@ img {
 
   @media (max-width: 550px) {
     .home__social-icon{
-      transform: translateX(40px); } }
+      transform: translateX(30px); } }
 
 .home__social-icon:hover {
   color: var(--first-color-alt);
