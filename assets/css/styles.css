@@ -292,8 +292,16 @@ img {
 .home__social-icon {
   font-size: 1.9rem;
   color: var(--first-color);
+/* ICONS TRANSALTE ===.===.=== */
   transform: translateX(-50px);
 }
+@media (max-width: 900px) {
+.home__social-icon{
+  transform: translateX(0); } }
+
+  @media (max-width: 550px) {
+    .home__social-icon{
+      transform: translateX(40px); } }
 
 .home__social-icon:hover {
   color: var(--first-color-alt);
