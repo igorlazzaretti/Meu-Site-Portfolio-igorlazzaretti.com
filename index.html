@@ -17,6 +17,11 @@
     <link rel="stylesheet" href="assets/css/styles.css" />
     <link rel="stylesheet" href="assets/css/underline-styles.css" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!--==================== CSS ANIMAÇÕES====================-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
 
     <link rel="icon" href="/assets/img/favicon.ico" type="image/x-icon" />
 
@@ -25,9 +30,9 @@
 
   <body>
     <!--==================== HEADER ====================-->
-    <header class="header" id="header">
+    <header class="header animate__animated animate__bounceInUp" id="header">
       <nav class="nav container">
-        <a href="#" class="nav__logo">Igor Lazzaretti</a>
+        <a href="#" class="nav__logo animate__animated animate__tada">Igor Lazzaretti</a>
 
         <div class="nav__menu" id="nav-menu">
           <ul class="nav__list grid">
@@ -85,10 +90,10 @@
     <!--==================== MAIN ====================-->
     <main class="main">
       <!--==================== HOME ====================-->
-      <section class="home section" id="home">
+      <section class="home section animate__animated animate__bounceInLeft" id="home">
         <div class="home__container container grid">
           <div class="home__content grid">
-            <div class="home__social">
+            <div class="home__social animate__animated animate__fadeInRightBig">
               <a
                 href="https://www.linkedin.com/in/igorlazzaretti/"
                 target="_blank"
@@ -150,7 +155,7 @@
             </div>
           </div>
 
-          <div class="home__scroll">
+          <div class="home__scroll animate__animated animate__rollIn">
             <a href="#about" class="home__scroll-button button-flex">
               <i class="uil uil-mouse-alt home__scroll-mouse"></i>
               <span class="home__scroll-name">desça</span>
@@ -161,8 +166,12 @@
       </section>
 
       <!--==================== SOBRE ==================-->
-      <section class="about section" id="sobre" data-aos="fade-up"
-      data-aos-anchor-placement="center-bottom">
+      <section
+        class="about section"
+        id="sobre"
+        data-aos="fade-up"
+        data-aos-anchor-placement="center-bottom"
+      >
         <h2 class="section__title">Mais Sobre Mim 😄</h2>
         <span class="section__subtitle"></span>
 
@@ -215,8 +224,12 @@
         </div>
       </section>
       <!--==================== PORTFOLIO ====================-->
-      <section class="portfolio section" id="portfolio" data-aos="fade-up"
-      data-aos-anchor-placement="center-bottom">
+      <section
+        class="portfolio section"
+        id="portfolio"
+        data-aos="fade-up"
+        data-aos-anchor-placement="center-bottom"
+      >
         <h2 class="section__title">Portfólio 👨‍💻</h2>
         <span class="section__subtitle">
           <br /><br />
@@ -1084,7 +1097,7 @@
       <div class="footer__bg">
         <div class="footer__container container grid">
           <div>
-            <h1 class="footer__title">Igor Lazzaretti</h1>
+            <h1 class="footer__title animate__animated animate__rollIn">Igor Lazzaretti</h1>
             <span class="footer__subtitle">Desenvolvedor Frontend</span>
           </div>
 

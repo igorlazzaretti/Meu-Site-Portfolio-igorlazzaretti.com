@@ -274,7 +274,7 @@ img {
 
 /*==================== HOME ====================*/
 .home__container {
-  gap: 1rem;
+  gap: 1.3rem;
 }
 
 .home__content {
@@ -286,12 +286,13 @@ img {
 .home__social {
   display: grid;
   grid-template-columns: max-content;
-  row-gap: 1rem;
+  row-gap: 1.2rem;
 }
 
 .home__social-icon {
   font-size: 1.9rem;
   color: var(--first-color);
+  transform: translateX(-50px);
 }
 
 .home__social-icon:hover {
