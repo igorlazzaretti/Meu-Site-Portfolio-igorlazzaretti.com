@@ -32,7 +32,9 @@
     <!--==================== HEADER ====================-->
     <header class="header animate__animated animate__bounceInUp" id="header">
       <nav class="nav container">
-        <a href="#" class="nav__logo animate__animated animate__tada">Igor Lazzaretti</a>
+        <a href="#" class="nav__logo animate__animated animate__tada"
+          >Igor Lazzaretti</a
+        >
 
         <div class="nav__menu" id="nav-menu">
           <ul class="nav__list grid">
@@ -90,7 +92,10 @@
     <!--==================== MAIN ====================-->
     <main class="main">
       <!--==================== HOME ====================-->
-      <section class="home section animate__animated animate__bounceInLeft" id="home">
+      <section
+        class="home section animate__animated animate__bounceInLeft"
+        id="home"
+      >
         <div class="home__container container grid">
           <div class="home__content grid">
             <div class="home__social animate__animated animate__fadeInRightBig">
@@ -1097,7 +1102,9 @@
       <div class="footer__bg">
         <div class="footer__container container grid">
           <div>
-            <h1 class="footer__title animate__animated animate__rollIn">Igor Lazzaretti</h1>
+            <h1 class="footer__title animate__animated animate__rollIn">
+              Igor Lazzaretti
+            </h1>
             <span class="footer__subtitle">Desenvolvedor Frontend</span>
           </div>
 
@@ -1174,24 +1181,25 @@
       AOS.init()
     </script>
 
-
     <!--============ ANGRY SCROLL HORIZONTAL  ===============-->
     <script>
-      var docWidth = document.documentElement.offsetWidth;
+      var docWidth = document.documentElement.offsetWidth
 
-[].forEach.call(
-  document.querySelectorAll('*'),
-  function(el) {
-    if (el.offsetWidth > docWidth) {
-      console.log(el);
-    }
-  }
-);
+      ;[].forEach.call(document.querySelectorAll('*'), function (el) {
+        if (el.offsetWidth > docWidth) {
+          console.log(el)
+        }
+      })
     </script>
   </body>
   <style>
-    body{
-      overflow-x: hidden;
+    .container {
+      width: 95%;
+    }
+    @media (max-width: 700px) {
+      .container {
+        width: 90%;
+      }
     }
   </style>
 </html>

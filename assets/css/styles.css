@@ -930,8 +930,10 @@ img {
   padding-top: 2rem;
 }
 
+
 .footer__container {
   row-gap: 3.5rem;
+  border-radius: 20px;
 }
 
 .footer__bg {
@@ -1110,6 +1112,8 @@ img {
     grid-template-columns: 0.6fr;
     justify-content: center;
   }
+
+
 }
 
 @media screen and (min-width: 768px) {
