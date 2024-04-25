@@ -1,5 +1,5 @@
 /*==================== GOOGLE FONTS ====================*/
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
 
 /*==================== VARIABLES CSS ====================*/
 :root {
@@ -24,7 +24,7 @@
   --scroll-thumb-color: hsl(var(--hue-color), 12%, 80%);
 
   /*========== Font and typography ==========*/
-  --body-font: "Poppins", sans-serif;
+  --body-font: 'Poppins', sans-serif;
 
   /* .5rem = 8px, 1rem = 16px, 1.5rem = 24px ... */
   --big-font-size: 2rem;
@@ -292,16 +292,20 @@ img {
 .home__social-icon {
   font-size: 1.9rem;
   color: var(--first-color);
-/* ICONS TRANSALTE ===.===.=== */
+  /* ICONS TRANSALTE ===.===.=== */
   transform: translateX(-50px);
 }
 @media (max-width: 900px) {
-.home__social-icon{
-  transform: translateX(0); } }
+  .home__social-icon {
+    transform: translateX(0);
+  }
+}
 
-  @media (max-width: 550px) {
-    .home__social-icon{
-      transform: translateX(15px); } }
+@media (max-width: 550px) {
+  .home__social-icon {
+    transform: translateX(15px);
+  }
+}
 
 .home__social-icon:hover {
   color: var(--first-color-alt);
@@ -750,13 +754,24 @@ img {
 
 .portfolio__content {
   padding: 0 1.5rem;
+  display: flex;
+  flex-direction: column;
+  width: 80%;
 }
 
 .portfolio__img {
-  height: 260px;
   object-fit: cover;
   border-radius: 0.5rem;
   justify-content: center;
+  height: 500px;
+  width: 2000px !important;
+}
+.portfolio__data{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 20px;
 }
 
 .portfolio__title {
@@ -767,14 +782,16 @@ img {
 .portfolio__description {
   margin-bottom: var(--mb-0-75);
 }
-
+.portfolio__button {
+  margin: 0 20px 0 ;
+}
 .portfolio__button:hover .button__icon {
   transform: translateX(0.25rem);
 }
 
 .swiper-button-prev::after,
 .swiper-button-next::after {
-  content: "";
+  content: '';
 }
 
 .swiper-portfolio-icon {
@@ -929,7 +946,6 @@ img {
 .footer {
   padding-top: 2rem;
 }
-
 
 .footer__container {
   row-gap: 3.5rem;
@@ -1112,8 +1128,6 @@ img {
     grid-template-columns: 0.6fr;
     justify-content: center;
   }
-
-
 }
 
 @media screen and (min-width: 768px) {
