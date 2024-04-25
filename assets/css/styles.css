@@ -1271,7 +1271,7 @@ img {
     width: 320px;
   }
   .home__social {
-    transform: translateX(-6rem);
+    /* transform: translateX(-6rem); */
   }
 
   .services__container {
