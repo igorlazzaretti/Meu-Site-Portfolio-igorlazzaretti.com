@@ -526,41 +526,6 @@ img {
   background-color: var(--first-color);
 }
 
-.skills__html {
-  width: 75%;
-}
-.skills__css {
-  width: 65%;
-}
-.skills__js {
-  width: 45%;
-}
-.skills__react {
-  width: 70%;
-}
-
-.skills__php {
-  width: 45%;
-}
-.skills__node {
-  width: 45%;
-}
-.skills__firebase {
-  width: 50%;
-}
-.skills__java {
-  width: 70%;
-}
-
-.skills__figma {
-  width: 50%;
-}
-.skills__gimp {
-  width: 35%;
-}
-.skills__photoshop {
-  width: 70%;
-}
 
 .skills__close .skills__list {
   height: 0;
