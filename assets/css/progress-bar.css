@@ -1,0 +1,32 @@
+#progress-container {
+    width: 100%;
+    height: 3px;
+    background-color: inherit;
+    z-index: 1;
+    visibility: visible!important;
+}
+#progress-bar {
+    height: 2px;
+    width: 0%;
+    background-color: var(--first-color);
+    /* background-color: #6e57e0; */
+}
+
+
+#progress-container2 {
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    height: 5px;
+    background-color: inherit;
+}
+#progress-bar2 {
+    position: fixed;
+
+    top: 02px;
+    height: 5px;
+    width: 0%;
+    background-color: var(--first-color);
+    /* background-color: #6e57e0; */
+}
+

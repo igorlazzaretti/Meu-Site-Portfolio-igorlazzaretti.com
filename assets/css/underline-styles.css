@@ -10,7 +10,8 @@
     bottom: -3px;
     left: 0px;
     position: absolute;
-    background-color: #6e57e0;
+    /* background-color: #6e57e0; */
+    background-color: var(--first-color);
     transition: 0.3s ease;
   }
   .underline:hover:after {

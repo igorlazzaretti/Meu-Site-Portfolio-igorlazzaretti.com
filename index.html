@@ -17,12 +17,15 @@
     <link rel="stylesheet" href="assets/css/styles.css" />
     <link rel="stylesheet" href="assets/css/underline-styles.css" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-    <!--==================== CSS ANIMAÇÕES====================-->
+    <!--==================== CSS ANIMAÇÕES ====================-->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
+    <!--============= SCROLL CSS PROGRESS BAR ====================-->
+    <link rel="stylesheet" href="./assets/css/progress-bar.css">
 
+    <!--============= FAV ICON ====================-->
     <link rel="icon" href="/assets/img/favicon.ico" type="image/x-icon" />
 
     <title>Igor Lazzeretti - Portfólio</title>
@@ -87,15 +90,20 @@
           </div>
         </div>
       </nav>
+      <!-- Progress Bar -->
+      <div id="progress-container">
+        <div id="progress-bar"></div>
+      </div>
     </header>
 
     <!--==================== MAIN ====================-->
     <main class="main">
-      <!--==================== HOME ====================-->
+    <!--==================== HOME ====================-->
       <section
         class="home section animate__animated animate__bounceInLeft"
         id="home"
       >
+
         <div class="home__container container grid">
           <div class="home__content grid">
             <div class="home__social animate__animated animate__fadeInRightBig">
@@ -169,7 +177,6 @@
           </div>
         </div>
       </section>
-
       <!--==================== SOBRE ==================-->
       <section
         class="about section"
@@ -233,7 +240,7 @@
         class="portfolio section"
         id="portfolio"
         data-aos="fade-up"
-        data-aos-anchor-placement="center-bottom"
+        data-aos-anchor-placement="top-bottom"
       >
         <h2 class="section__title">Portfólio 👨‍💻</h2>
         <span class="section__subtitle">
@@ -1188,7 +1195,8 @@
     <a href="#home" class="scrollup" id="scroll-up">
       <i class="uil uil-arrow-up scrollup__icon" title="Volte ao Topo"></i>
     </a>
-
+    <!--================ SCROLL INDICATOR  ====================-->
+    <script src="./assets/js/progress-bar.js"></script>
     <!--==================== SWIPER JS ====================-->
     <script src="assets/js/swiper-bundle.min.js"></script>
     <!--==================== MAIN JS ====================-->
@@ -1211,6 +1219,11 @@
         }
       })
     </script>
+
+
+<div id="progress-container2">
+  <div id="progress-bar2"></div>
+</div>
   </body>
     <!--============ LAST DETAILS  ===============-->
   <style>
