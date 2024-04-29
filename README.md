@@ -5,13 +5,13 @@
 
 🚀 Estou emocionado em compartilhar que finalizei meu próprio site portfolio como desenvolvedor iniciante! 🌟 Este projeto representa não apenas horas de dedicação e aprendizado, mas também meu compromisso comigo mesmo!
 
-Projeto com tecnologias HTML, CSS (Unicoins + Swipper + AOS Scroll + Animate.css ) e Javascript.
+Projeto com tecnologias HTML, CSS (Unicoins + Swipper + AOS Scroll + Animate.css) e Javascript.
 
 Este site-portfólio foi construído inspirado no projeto de <a href="https://github.com/jose-bone/responsive-portfolio-website">Jose Bone</a>.
 
 ## Imagem Prévia
 <div align="center">
-<img width="400" src="./assets/img/preview.png">
+<img width="400" src="./assets/readme/fullpage.png">
 </div>
 
 
