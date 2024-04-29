@@ -726,10 +726,13 @@ img {
 
 .portfolio__img {
   object-fit: cover;
-  border-radius: 0.5rem;
+  border-radius: 20px;
+  border-width: 2px;
+  border-color: var(--first-color);
   justify-content: center;
-  height: 500px;
-  width: 2000px !important;
+  height: 400px;
+  width: 1000px!important;
+  
 }
 .portfolio__data{
   display: flex;
@@ -1286,6 +1289,7 @@ img {
 
   .portfolio__content {
     column-gap: 5rem;
+    align-items: center;
   }
   .swiper-portfolio-icon {
     font-size: 3.5rem;
