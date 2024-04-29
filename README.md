@@ -1,22 +1,28 @@
 <div align="center"><img width="200" src="./assets/img/funko3.png"></div>
 
 ## Meu Site-Portfólio
-<a target="_blank" href="https://igorlazzaretti.github.io/caffeeteria-bootstrap-dio.me/">👨‍💻 Deploy do Projeto</a>
+<a target="_blank" href="https://igorlazzaretti.com">👨‍💻 Acesse o Site Aqui</a>
 
-Projeto com tecnologias HTML, CSS (Unicoins + Swipper) e Javascript.
+🚀 Estou emocionado em compartilhar que finalizei meu próprio site portfolio como desenvolvedor iniciante! 🌟 Este projeto representa não apenas horas de dedicação e aprendizado, mas também meu compromisso comigo mesmo!
+
+Projeto com tecnologias HTML, CSS (Unicoins + Swipper + AOS Scroll + Animate.css ) e Javascript.
 
 Este site-portfólio foi construído inspirado no projeto de <a href="https://github.com/jose-bone/responsive-portfolio-website">Jose Bone</a>.
 
-## Imagem
+## Imagem Prévia
 <div align="center">
 <img width="400" src="./assets/img/preview.png">
 </div>
 
 
 ## Tecnologias Utilizadas
--   HTML 5
--   CSS 3
--   Bootstrap
+
+<div align="center">
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" title="HTML" alt="HTML" width="70" height="65"/>&nbsp;
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" title="CSS" alt="CSS" width="70" height="65"/>&nbsp;
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" title="Javascript" alt="Javascript" width="70" height="65"/>&nbsp;
+
+</div>
 
 
 ## Sobre o Autor
@@ -24,12 +30,12 @@ Este site-portfólio foi construído inspirado no projeto de <a href="https://gi
 
 [![Typing SVG](https://readme-typing-svg.herokuapp.com?font=IBM+Plex+Mono&weight=600&size=30&duration=3000&pause=700&color=ED51F7&center=true&vCenter=true&random=false&width=490&height=55&lines=Ol%C3%A1!+%F0%9F%99%8B%E2%80%8D%E2%99%82%EF%B8%8F+Meu+nome+%C3%A9+Igor;Hello!+%F0%9F%91%8B+My+name+is+Igor)](https://git.io/typing-svg)
 
-<img src="https://scontent.fcxj17-1.fna.fbcdn.net/v/t39.30808-1/410894894_7330500726969644_928945232552738855_n.jpg?stp=dst-jpg_p200x200&_nc_cat=105&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeFjsjp5NTnkdsip4BQRzywMeBJN9nP0uIR4Ek32c_S4hF_Hmr-_sEOB2mWGD0yeElOKIlEf_73mnXmGp36XbWqe&_nc_ohc=rHW9Bam3k9YAX8GfxcS&_nc_ht=scontent.fcxj17-1.fna&oh=00_AfChS_D3VeCigb97Pb-tqjrSRMN_0f1A-nmL-m7k28gUpw&oe=660B18DD" width="150" style="border-radius:60px">
+<img src="./assets/readme/igor.png" width="200" >
 
 </div>
 
 🎓 Análise de Sistemas - Cruzeiro do Sul <br>
-💻 Estudante FullStack: Dio.me / DevClub <br>
+💻 Estudante FullStack: DevClub <br>
 👩🏻‍💻 Autor do Site: <a href="https://igorlazzaretti.com/">igorlazzaretti.com</a> <br>
 📚 Leitor e Estudante de Inglês <br> 
 💚 Juventudista e 🧙‍♂️ Fã de Harry Potter  <br> 
