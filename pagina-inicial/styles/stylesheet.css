@@ -1,0 +1,172 @@
+@import url(https://igorlazzaretti.com/reset.css);
+
+:root {
+    --black: black;
+    --gray: rgb(71, 71, 69);
+    --white: white;
+    --beige: beige;
+    --dbeige: rgb(109, 109, 87);
+}
+
+body {
+    background-color: var(--black);
+    /* Fundo */
+    color: var(--beige);
+    font-family: monospace;
+    /* Fonte com estilo retrô */
+    width: 95vw;
+    height: 95vh;
+    box-sizing: border-box;
+}
+
+.container {
+    display: grid;
+    grid-template-areas:
+        "navbar navbar"
+        "header header"
+        "main main"
+        "footer footer";
+    grid-template-columns: 1fr 4fr;
+    /* Proporção das colunas */
+    grid-gap: 10px;
+    height: 81vh;
+    width: 95%;
+    border: 5px solid var(--dbeige);
+    /* Borda preta */
+    padding: 20px;
+    margin: 30px 30px 30px 3.5vw;
+    align-items: center;
+}
+/* Navbar */
+.navbar {
+    grid-area: navbar;
+    display: flex;
+    width: 95vw;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.search-container form {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.search-container input[type="text"] {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 7px;
+    background-color: var(--dbeige);
+}
+
+.search-container button {
+    background-color: transparent;
+    border: none;
+    padding: 8px;
+    cursor: pointer;
+}
+.search-container button img {
+    width: 20px;
+}
+/* Header */
+.header {
+    grid-area: header;
+    display: flex;
+    justify-content: space-between;
+    width: 89vw;
+    font-size: clamp(1rem, 2.4vw, 1.5rem);
+}
+
+header #horario {
+    margin-top: 70px;
+    font-size: clamp(0.4rem, 8.5vw, 3rem);
+}
+
+.main {
+    height: 20vw;
+    width: 65vw;
+    display: flex;
+    /* Ativa o Flexbox */
+    justify-content: center;
+    /* Centraliza horizontalmente */
+    align-items: flex-start;
+    /* Centraliza verticalmente */
+    flex-wrap: wrap;
+    /* Permite que os itens quebrem em várias linhas se necessário */
+    gap: 20px;
+    /* Adiciona espaço entre os labels */
+    margin-left: 17%;
+    margin-top: -60px;
+}
+
+.main label {
+    width: 70px;
+    display: flex;
+    flex-direction: column;
+    /* Alinha a imagem e o texto verticalmente */
+    align-items: center;
+    /* Centraliza a imagem e o texto horizontalmente */
+    cursor: pointer;
+
+    /* Muda o cursor para indicar que é clicável */
+    &:hover {
+        transform: scale(1.15);
+        transition: ease-in-out 0.5s;
+    }
+}
+
+.main label img {
+    border-radius: 40px;
+    background-color: var(--white);
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    margin-bottom: 7px;
+}
+
+.main label p {
+    font-size: clamp(0.9rem, 1.6vw, 1.2rem);
+}
+
+.logo {
+    grid-area: logo;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu {
+    grid-area: menu;
+    display: flex;
+    gap: 10px;
+}
+
+.conteudo {
+    grid-area: conteudo;
+    display: flex;
+    gap: 10px;
+}
+
+.item {
+    background-color: white;
+    border: 1px solid black;
+    flex-grow: 1;
+    /* Os itens ocupam todo o espaço disponível */
+}
+
+.footer {
+    grid-area: footer;
+    text-align: center;
+    width: 94vw;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}

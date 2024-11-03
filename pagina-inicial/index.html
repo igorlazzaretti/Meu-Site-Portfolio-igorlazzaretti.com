@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Inicial</title>
+    <link rel="stylesheet" href="./styles/stylesheet.css">
+    <link rel="stylesheet" href="./styles/loading.css">
+    <link rel="shortcut icon" href="./assets/ico/earth-americas-solid.svg" type="image/x-icon">
+</head>
+<body>
+    <!-- Loagind Inicial da Página -->
+    <div class="loader"></div>
+
+    <div id="content" class="container" style="display: none">
+        <!-- Navbar => search e botão color-mode -->
+        <nav class="navbar">
+            <div class="search-container">
+                <form action="https://www.google.com/search" method="get" target="_blank">
+                    <input type="text" name="q" placeholder="Google">
+                    <button type="submit">
+                        <img src="./assets/ico/icons8-search.svg" alt="Pesquisar">
+                    </button>
+                </form>
+            </div>
+        </nav>
+        <!-- Header => clima, temp, data, horário -->
+        <header class="header">
+            <div class="weather">
+                <div class="weather-icon">
+                    <a href=https://www.climatempo.com.br/previsao-do-tempo/15-dias/cidade/353/caxiasdosul-rs"
+                        target="_blank" title="climatempo.com.br/previsao-do-tempo/"><img src="" alt="Ícone do clima"
+                            id="weather-icon"></a>
+                </div>
+                <div class="city" id="city">Caxias do Sul (RS)</div>
+                <div class="temperature" id="temperature">- °C</div>
+                <div class="description" id="description">-</div>
+            </div>
+            <div class="data" id="data">Quinta-Feira, 31 de Outubro de 2024</div>
+            <div class="horario" id="horario">16:20</div>
+        </header>
+        <!-- Main => Icones ficam em label tem a img e o texto -->
+        <main class="main">
+            <label for="favorite">
+                <a href="https://gemini.google.com/app">
+                    <img src="https://www.gstatic.com/lamda/images/gemini_home_icon_8d62f72e7aae54b6859f1.png"
+                        alt="Favorite"> </a>
+                <p>Gemini</p>
+            </label>
+            <label for="favorite">
+                <a href="https://calendar.google.com/calendar/u/0/r?pli=1">
+                    <img src="https://calendar.google.com/googlecalendar/images/favicons_2020q4/calendar_31_256.ico"
+                        alt="Favorite"> </a>
+                <p>Google Calendar</p>
+            </label>
+            <label for="favorite">
+                <a href="https://www.youtube.com/">
+                    <img src="https://www.youtube.com/s/desktop/2ebf714b/img/logos/favicon_144x144.png" alt="Favorite">
+                </a>
+                <p>Youtube</p>
+            </label>
+            <label for="favorite">
+                <a href="https://www.notion.so/igorlzzrtt/Main-Notion-Dashboard-3a730e0aa9894feead4d25c5062fb958">
+                    <img src="https://img.icons8.com/ios/50/notion.png" alt="Favorite"> </a>
+                <p>Notion</p>
+            </label>
+            <label for="favorite">
+                <a href="https://github.com/igorlazzaretti?tab=repositories">
+                    <img src="./assets/ico/github-logo.png" alt="Favorite"> </a>
+                <p>Github</p>
+            </label>
+            <label for="favorite">
+                <a href="https://www.duolingo.com/">
+                    <img src="https://img.icons8.com/cute-clipart/64/duolingo-logo.png" alt="Favorite"> </a>
+                <p>Duolingo</p>
+            </label>
+            <label for="favorite">
+                <a href="https://pgfconcursos.com/">
+                    <img src="./assets/ico/logo-pgfconcursos.com.png" alt="Favorite"> </a>
+                <p>PGF Conc</p>
+            </label>
+            <label for="favorite">
+                <a href="https://portalaluno.unyleya.edu.br/login">
+                    <img src="https://portalaluno.unyleya.edu.br/65ead4e5b11f3288a241021db1db85f5.png" alt="Favorite">
+                </a>
+                <p>Unyleya</p>
+            </label>
+            <label for="favorite">
+                <a href="https://sso.cruzeirodosul.edu.br/">
+                    <img src="./assets/ico/cruzeiro-do-sul.png" alt="Favorite"> </a>
+                <p>Cruzeiro do Sul</p>
+            </label>
+
+
+
+
+        </main>
+        <!-- Footer => não implementado -->
+        <footer class="footer">
+            <a href="https://igorlazzaretti.com">
+                <p>igorlazzaretti.com</p>
+            </a>
+        </footer>
+    </div>
+    <!-- Javascripts -->
+    <script src="./scripts/script.js"></script>
+    <script src="./scripts/loading.js"></script>
+</body>
+
+</html>
