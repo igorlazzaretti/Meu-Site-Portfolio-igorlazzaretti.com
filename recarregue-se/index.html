@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/stylesheet.css">
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Life+Savers:wght@400;700;800&display=swap" rel="stylesheet">
+    <!-- title -->
+    <title>Recarregue-se</title>
+</head>
+
+<body>
+    <div class="slider-container">
+        <div class="slide active">
+            <div class="slide-content">
+                <h2>Recarregue-se</h2>
+            </div>
+        </div>
+        <div class="slide">
+            <div class="slide-content">
+                <h2 class="text-content">Respirar ar puro e contemplar a beleza natural ajuda a relaxar o corpo e
+                    acalmar a mente.</h2>
+            </div>
+        </div>
+        <div class="slide">
+            <div class="slide-content">
+                <h2 class="text-content">Caminhar e pedalar em meio à natureza são ótimas formas de exercício físico,
+                    que fortalecem o corpo e previnem doenças.
+                </h2>
+            </div>
+        </div>
+        <div class="slide">
+            <div class="slide-content">
+                <h2 class="text-content">A exposição ao sol e ao ar livre aumenta a produção de vitamina D, que é
+                    essencial para a imunidade.
+                </h2>
+            </div>
+        </div>
+        <div class="slide">
+            <div class="slide-content">
+                <h2 class="text-content">O contato com a natureza estimula a imaginação e a capacidade de pensar fora da
+                    caixa.
+                </h2>
+            </div>
+        </div>
+        <div class="slide">
+            <div class="slide-content">
+                <h2 class="text-content">Conectar-se com a natureza aumenta a sensação de bem-estar e confiança.
+
+                </h2>
+            </div>
+        </div>
+
+        <button class="nav-button prev">←</button>
+        <button class="nav-button next">→</button>
+
+        <div class="dots-container">
+            <div class="dot active"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+        </div>
+
+        <button class="audio-control">♪</button>
+    </div>
+
+    <audio id="nature-sound" loop>
+        <source src="./assets/audio.mp4" type="audio/mpeg">
+    </audio>
+    <script src="./scripts/script.js""></script>
+</body>
+</html>
