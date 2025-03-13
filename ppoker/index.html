@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planning Poker</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f5f5f5;
+        }
+
+        .container {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            width: 90%;
+            max-width: 600px;
+            text-align: center;
+        }
+
+        h1 {
+            color: #2c3e50;
+            margin-bottom: 30px;
+            font-size: 32px;
+        }
+
+        .symbol {
+            font-size: 2.1rem !important;
+        }
+
+        .button-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(5, 1fr);
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+
+        .value-button {
+            background-color: #3498db;
+            color: white;
+            border: none;
+            padding: 20px 0;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 20px;
+            transition: all 0.3s;
+        }
+
+        .value-button:hover {
+            background-color: #2980b9;
+            transform: scale(1.05);
+        }
+
+        .value-button.selected {
+            background-color: #1abc9c;
+            transform: scale(1.1);
+            box-shadow: 0 0 10px rgba(26, 188, 156, 0.5);
+        }
+
+        .value-button.symbol {
+            background-color: #9b59b6;
+        }
+
+        .value-button.symbol:hover {
+            background-color: #8e44ad;
+        }
+
+        .value-button.symbol.selected {
+            background-color: #8e44ad;
+            box-shadow: 0 0 10px rgba(142, 68, 173, 0.5);
+        }
+
+        .total-display {
+            background-color: #f8f9fa;
+            border-radius: 8px;
+            padding: 10px 15px;
+            font-size: 20px;
+            margin: 15px 0;
+            display: inline-block;
+        }
+
+        button.action-button {
+            background-color: #3498db;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 18px;
+            transition: background-color 0.3s;
+            margin: 10px;
+        }
+
+        button.action-button:hover {
+            background-color: #2980b9;
+        }
+
+        button.action-button:disabled {
+            background-color: #bdc3c7;
+            cursor: not-allowed;
+        }
+
+        .planning-screen {
+            display: none;
+        }
+
+        .hour-display {
+            font-size: 16rem;
+            font-weight: bold;
+            margin: 25px 0;
+            color: #2c3e50;
+            filter: blur(180px);
+            transition: filter 0.5s;
+            user-select: none;
+        }
+
+        .hour-display-container {
+            background-color: #f8f9fa;
+            border-radius: 15px;
+            padding: 40px;
+            margin: 20px 0;
+        }
+
+        .revealed {
+            filter: blur(0);
+        }
+
+        .planning-actions {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 30px;
+        }
+
+        .back-btn {
+            background-color: #e74c3c;
+        }
+
+        .back-btn:hover {
+            background-color: #c0392b;
+        }
+
+        .show-btn {
+            background-color: #2ecc71;
+            font-size: 20px;
+            padding: 15px 40px;
+        }
+
+        .show-btn:hover {
+            background-color: #27ae60;
+        }
+
+        .clear-btn {
+            background-color: #f39c12;
+            font-size: 16px;
+            padding: 10px 20px;
+        }
+
+        .clear-btn:hover {
+            background-color: #d35400;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Tela inicial com grid de botões -->
+        <div class="home-screen">
+            <h1>Planning Poker</h1>
+            <div class="button-grid">
+                <button class="value-button number" data-value="0.5">1/2</button>
+                <button class="value-button number" data-value="1">1</button>
+                <button class="value-button number" data-value="2">2</button>
+                <button class="value-button number" data-value="3">3</button>
+                <button class="value-button number" data-value="5">5</button>
+                <button class="value-button number" data-value="8">8</button>
+                <button class="value-button number" data-value="10">10</button>
+                <button class="value-button number" data-value="13">13</button>
+                <button class="value-button number" data-value="20">20</button>
+                <button class="value-button number" data-value="40">40</button>
+                <button class="value-button number" data-value="100">100</button>
+                <button class="value-button symbol" data-value="😢">😢</button>
+                <button class="value-button symbol" data-value="❓">❓</button>
+                <button class="value-button symbol" data-value="☕">☕</button>
+                <!-- Deixando os últimos dois espaços vazios para um grid 4x5 perfeito -->
+                <div></div>
+                <div></div>
+            </div>
+
+            <div class="total-display" id="totalDisplay">Total: 0</div>
+
+            <button class="action-button clear-btn" id="clearSelection">Limpar</button>
+            <button class="action-button" id="goToPlanning" disabled>Ir para Planning</button>
+        </div>
+
+        <!-- Tela de planning -->
+        <div class="planning-screen">
+            <h1>Sua Estimativa</h1>
+            <div class="hour-display-container">
+                <div class="hour-display" id="hourDisplay">0</div>
+            </div>
+            <div class="planning-actions">
+                <button class="action-button back-btn" id="backButton">Voltar</button>
+                <button class="action-button show-btn" id="showButton">MOSTRAR</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Elementos do DOM
+        const homeScreen = document.querySelector('.home-screen');
+        const planningScreen = document.querySelector('.planning-screen');
+        const valueButtons = document.querySelectorAll('.value-button');
+        const numberButtons = document.querySelectorAll('.value-button.number');
+        const symbolButtons = document.querySelectorAll('.value-button.symbol');
+        const goToPlanningBtn = document.getElementById('goToPlanning');
+        const hourDisplay = document.getElementById('hourDisplay');
+        const showButton = document.getElementById('showButton');
+        const backButton = document.getElementById('backButton');
+        const totalDisplay = document.getElementById('totalDisplay');
+        const clearButton = document.getElementById('clearSelection');
+
+        let selectedValues = [];
+        let selectedSymbol = null;
+        let total = 0;
+
+        // Função para atualizar o display de total
+        function updateTotal() {
+            if (selectedSymbol) {
+                totalDisplay.textContent = `Valor: ${selectedSymbol}`;
+                goToPlanningBtn.disabled = false;
+                return;
+            }
+
+            total = 0;
+            selectedValues.forEach(value => {
+                total += parseFloat(value);
+            });
+
+            totalDisplay.textContent = `Total: ${total}`;
+            goToPlanningBtn.disabled = (total === 0);
+        }
+
+        // Adicionar eventos aos botões numéricos
+        numberButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                // Se um símbolo estiver selecionado, limpe-o primeiro
+                if (selectedSymbol) {
+                    symbolButtons.forEach(btn => btn.classList.remove('selected'));
+                    selectedSymbol = null;
+                }
+
+                const value = button.getAttribute('data-value');
+                const index = selectedValues.indexOf(value);
+
+                if (index === -1) {
+                    // Adicionar valor à seleção
+                    selectedValues.push(value);
+                    button.classList.add('selected');
+                } else {
+                    // Remover valor da seleção
+                    selectedValues.splice(index, 1);
+                    button.classList.remove('selected');
+                }
+
+                updateTotal();
+            });
+        });
+
+        // Adicionar eventos aos botões de símbolo
+        symbolButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                // Limpar todas seleções anteriores (números e símbolos)
+                valueButtons.forEach(btn => btn.classList.remove('selected'));
+                selectedValues = [];
+
+                // Selecionar apenas este símbolo
+                button.classList.add('selected');
+                selectedSymbol = button.getAttribute('data-value');
+
+                updateTotal();
+            });
+        });
+
+        // Botão para limpar seleção
+        clearButton.addEventListener('click', () => {
+            valueButtons.forEach(btn => btn.classList.remove('selected'));
+            selectedValues = [];
+            selectedSymbol = null;
+            updateTotal();
+        });
+
+        // Navegação para a tela de planning
+        goToPlanningBtn.addEventListener('click', () => {
+            // Salvar o valor e mudar para a tela de planning
+            if (selectedSymbol) {
+                hourDisplay.textContent = selectedSymbol;
+            } else {
+                hourDisplay.textContent = total;
+            }
+
+            homeScreen.style.display = 'none';
+            planningScreen.style.display = 'block';
+        });
+
+        // Botão para mostrar o valor
+        showButton.addEventListener('click', () => {
+            hourDisplay.classList.add('revealed');
+        });
+
+        // Botão para voltar à tela inicial
+        backButton.addEventListener('click', () => {
+            // Resetar estado e voltar para home
+            hourDisplay.classList.remove('revealed');
+            planningScreen.style.display = 'none';
+            homeScreen.style.display = 'block';
+        });
+    </script>
+</body>
+</html>
