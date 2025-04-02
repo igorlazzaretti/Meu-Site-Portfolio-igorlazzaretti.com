@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planning Poker</title>
+    <link rel="stylesheet" href="./src/styles.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🃏</text></svg>">
+</head>
+<body>
+    <div class="container">
+        <!-- Tela inicial com grid de botões -->
+        <div class="home-screen">
+            <h1>Planning Poker</h1>
+            <div class="button-grid">
+                <button class="value-button number" data-value="0.5">1/2</button>
+                <button class="value-button number" data-value="1">1</button>
+                <button class="value-button number" data-value="2">2</button>
+                <button class="value-button number" data-value="3">3</button>
+                <button class="value-button number" data-value="5">5</button>
+                <button class="value-button number" data-value="8">8</button>
+                <button class="value-button number" data-value="10">10</button>
+                <button class="value-button number" data-value="13">13</button>
+                <button class="value-button number" data-value="20">20</button>
+                <button class="value-button number" data-value="40">40</button>
+                <button class="value-button number" data-value="100">100</button>
+                <button class="value-button symbol" data-value="😢">😢</button>
+                <button class="value-button symbol" data-value="❓">❓</button>
+                <button class="value-button symbol" data-value="☕">☕</button>
+                <!-- Adicione este botão ao seu HTML -->
+                <button id="dark-mode-toggle" class="action-button value-button symbol">🦇</button>
+                <!-- Deixando os últimos dois espaços vazios para um grid 4x5 perfeito -->
+                <div></div>
+                <div></div>
+            </div>
+
+            <div class="total-display" id="totalDisplay">Total: 0</div>
+            <br>
+            <button class="action-button clear-btn" id="clearSelection">Limpar</button>
+            <button class="action-button" id="goToPlanning" disabled>Ir para Planning</button>
+        </div>
+
+        <!-- Tela de planning -->
+        <div class="planning-screen">
+            <h1>Sua Estimativa</h1>
+            <div class="hour-display-container">
+                <div class="hour-display" id="hourDisplay">0</div>
+            </div>
+            <div class="planning-actions">
+                <button class="action-button back-btn" id="backButton">Voltar</button>
+                <button class="action-button show-btn" id="showButton">MOSTRAR</button>
+                <button class="action-button loop-btn" id="loopButton"><i class="fa-solid fa-rotate"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Javascript -->
+    <script src="./src/scripts.js"></script>
+    <script src="https://kit.fontawesome.com/fa7bee0f58.js" crossorigin="anonymous"></script>
+</body>
+</html>
