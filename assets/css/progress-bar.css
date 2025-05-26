@@ -12,6 +12,15 @@
     /* background-color: #6e57e0; */
 }
 
+@media screen and (max-width: 768px) {
+    #progress-container {
+        visibility: hidden !important;
+    }
+    #progress-bar {
+        visibility: hidden !important;
+    }
+}
+
 
 #progress-container2 {
     position: fixed;
@@ -29,4 +38,3 @@
     background-color: var(--first-color);
     /* background-color: #6e57e0; */
 }
-

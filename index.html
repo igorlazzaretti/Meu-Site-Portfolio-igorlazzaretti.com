@@ -5,6 +5,17 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+  <!--==================== Metas ====================-->
+  <meta name="description" content="Portfólio de Igor Dossin Lazzaretti - Desenvolvedor Web Front-end e Back-end. Especializado em React, Node.js, JavaScript, UX/UI. Confira meus projetos e habilidades.">
+  <meta name="keywords" content="desenvolvedor web, portfólio, front-end, back-end, Igor Dossin Lazzaretti, Caxias do Sul - RS, JavaScript, React, Node.js, HTML, CSS, UI/UX, desenvolvimento web">
+  <meta name="author" content="[Seu Nome]">
+  <meta name="robots" content="index, follow"> <meta property="og:title" content="Portfólio de Igor Dossin Lazzaretti - Desenvolvedor Web">
+  <meta property="og:description" content="Confira meu trabalho como desenvolvedor web, incluindo projetos em Javascript, especializado em React e Angular.">
+  <meta property="og:image" content="https://media.licdn.com/dms/image/v2/D4D03AQFlY3gMrsy8lw/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1719282821653?e=1753920000&v=beta&t=HYMiZrGFEhdGM-fjSLfkh2zal6PdFIkgOie3VcKve2M">
+  <meta property="og:url" content="https://igorlazzaretti.com/">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt_BR">
+
   <!--==================== UNICONS ====================-->
   <link rel="stylesheet" href="https://unicons.iconscout.com/release/v3.0.6/css/line.css" />
 
@@ -29,7 +40,7 @@
 <body>
 
   <!--==================== HEADER ====================-->
-  <header class="header animate__animated animate__bounceInUp" id="header">
+  <header class="header" id="header">
     <nav class="nav container">
       <a href="#" class="nav__logo animate__animated animate__tada">Igor Lazzaretti</a>
 
@@ -115,7 +126,7 @@
           </div>
 
           <div class="home__img">
-            <img src="./assets/img/perfil3.webp" alt="" />
+            <img src="./assets/img/igor-perfil-mascara-ondulada.webp" alt="Imagem Principal de Perfil" />
           </div>
 
           <div class="home__data">
@@ -125,17 +136,17 @@
             </h1>
             <h3 class="home__subtitle">Desenvolvedor Web</h3>
             <p class="home__description">
-              Amante de tecnologia, estudante de Análise de Sistemas, aluno do DevClub,
-              Juventudista e fã de Harry Potter 🧙‍♂️
+              Amante de tecnologia, Desenvolvedor de Sistemas Web, aluno do DevClub,
+              Juventudista 💚 e fã de Harry Potter 🧙‍♂️
             </p>
             <a href="https://scratch.mit.edu/projects/846826964/" class="button button--flex" target="_blank" >
-              Jogue meu jogo!
+              Sabia que eu tenho um Jogo?!
             </a>
           </div>
         </div>
 
         <div class="home__scroll animate__animated animate__rollIn">
-          <a href="#about" class="home__scroll-button button-flex">
+          <a href="#sobre" class="home__scroll-button button-flex">
             <i class="uil uil-mouse-alt home__scroll-mouse"></i>
             <span class="home__scroll-name">desça</span>
             <i class="uil uil-arrow-down home__scroll-arrow"></i>
@@ -155,24 +166,26 @@
           <p class="about__description">
             Desenvolvedor Web com conhecimento nas ferramentas HTML, CSS,
             Javascrip e Github. Estudante de Análises de Sistemas e na
-            plataforma DevClub. Conheça meu <a href="./blog/index.html">Blog</a>.
+            plataforma DevClub. Conheça meu
+            <a href="./blog/index.html"
+              class="blog_link">Blog</a>.
           </p>
 
           <div class="about__info">
             <div>
-              <span class="about__info-title">-01</span>
+              <span class="about__info-title">02</span>
               <span class="about__info-name">Anos de<br />
                 experiência</span>
             </div>
 
             <div>
-              <span class="about__info-title">+10</span>
+              <span class="about__info-title">+20</span>
               <span class="about__info-name">Projetos <br />
                 finalizados</span>
             </div>
 
             <div>
-              <span class="about__info-title">+1</span>
+              <span class="about__info-title">+2</span>
               <span class="about__info-name">Empresas <br />
                 que colaborei</span>
             </div>
@@ -197,6 +210,30 @@
 
       <div class="portfolio__container container swiper-container">
         <div class="swiper-wrapper">
+          <!--================== PORTFOLIO DOSSIN ODONTO ==================-->
+          <div class="portfolio__content swiper-slide">
+            <img src="assets/img/portfolio/dossin-odonto-port.gif" alt="" class="portfolio__img" />
+
+            <div class="portfolio__data">
+              <h3 class="portfolio__title">Dossin odontologia</h3>
+              <p class="portfolio__description">
+                Um projeto real. Site institucional da clínica Odontológica Dossin Odontologia Especializada.
+                Desenvolvido com HTML, CSS e JavaScript. O site é responsivo e possui uma área de contato.
+              </p>
+              <!-- DEPLOY BUTTON -->
+              <div class="portfolio__buttons">
+                <a href="https://dossinodontologia.com.br/"
+                  class="button button--flex button--small portfolio__button" target="_blank"> Acesse o Site
+                  <i class="uil uil-arrow-right button__icon"></i>
+                  <!--GITHUB REPOSITORY BUTTON -->
+                  <a href="https://github.com/igorlazzaretti/dossin-odontologia-website"
+                    class="button button--flex button--small portfolio__button" target="_blank"> Repositório
+                    <i class="uil uil-arrow-right button__icon"></i>
+                  </a>
+              </div>
+              <!-- END OF PORTFOLIO BUTTONS -->
+            </div>
+          </div>
           <!--================== PORTFOLIO CAFE ==================-->
           <div class="portfolio__content swiper-slide">
             <img src="assets/img/portfolio/projCaffeeteria.webp" alt="" class="portfolio__img" />
@@ -413,17 +450,17 @@
               <div class="skills__data">
                 <div class="skills__titles">
                   <h3 class="skills__name">HTML</h3>
-                  <span class="skills__number">95%</span>
+                  <span class="skills__number">99%</span>
                 </div>
                 <div class="skills__bar">
-                  <span class="skills__percentage" style="width: 95%;"></span>
+                  <span class="skills__percentage" style="width: 99%;"></span>
                 </div>
               </div>
 
               <div class="skills__data">
                 <div class="skills__titles">
                   <h3 class="skills__name">CSS</h3>
-                  <span class="skills__number"><i class="il uil-css3">85%</i></span>
+                  <span class="skills__number">85%</span>
                 </div>
                 <div class="skills__bar">
                   <span class="skills__percentage" style="width: 85%;"></span>
@@ -432,7 +469,7 @@
 
               <div class="skills__data">
                 <div class="skills__titles">
-                  <h3 class="skills__name">JavaScript</h3>
+                  <h3 class="skills__name">JavaScript + Typescript</h3>
                   <span class="skills__number">80%</span>
                 </div>
                 <div class="skills__bar">
@@ -452,11 +489,11 @@
 
               <div class="skills__data">
                 <div class="skills__titles">
-                  <h3 class="skills__name">Typescript</h3>
-                  <span class="skills__number">65%</span>
+                  <h3 class="skills__name">Angular</h3>
+                  <span class="skills__number">25%</span>
                 </div>
                 <div class="skills__bar">
-                  <span class="skills__percentage skills__react" style="width: 65%;"></span>
+                  <span class="skills__percentage skills__react" style="width: 25%;"></span>
                 </div>
               </div>
 
@@ -478,6 +515,7 @@
             </div>
 
             <div class="skills__list grid">
+
               <div class="skills__data">
                 <div class="skills__titles">
                   <h3 class="skills__name">NodeJS</h3>
@@ -487,34 +525,43 @@
                   <span class="skills__percentage skills__php" style="width: 45%;"></span>
                 </div>
               </div>
+              <div class="skills__data">
+                <div class="skills__titles">
+                  <h3 class="skills__name">PHP</h3>
+                  <span class="skills__number">65%</span>
+                </div>
+                <div class="skills__bar">
+                  <span class="skills__percentage skills__php" style="width: 65%;"></span>
+                </div>
+              </div>
 
               <div class="skills__data">
                 <div class="skills__titles">
                   <h3 class="skills__name">PostgreSQL</h3>
-                  <span class="skills__number">25%</span>
+                  <span class="skills__number">65%</span>
                 </div>
                 <div class="skills__bar">
-                  <span class="skills__percentage skills__node" style="width: 25%;"></span>
+                  <span class="skills__percentage skills__node" style="width: 65%;"></span>
                 </div>
               </div>
 
               <div class="skills__data">
                 <div class="skills__titles">
-                  <h3 class="skills__name">ExpressJS</h3>
-                  <span class="skills__number">25%</span>
+                  <h3 class="skills__name">SQL</h3>
+                  <span class="skills__number">65%</span>
                 </div>
                 <div class="skills__bar">
-                  <span class="skills__percentage skills__firebase" style="width: 25%;"></span>
+                  <span class="skills__percentage skills__firebase" style="width: 65%;"></span>
                 </div>
               </div>
 
               <div class="skills__data">
                 <div class="skills__titles">
-                  <h3 class="skills__name">MongoDB</h3>
-                  <span class="skills__number">40%</span>
+                  <h3 class="skills__name">GitHub</h3>
+                  <span class="skills__number">80%</span>
                 </div>
                 <div class="skills__bar">
-                  <span class="skills__percentage skills__java" style="width: 40%;"></span>
+                  <span class="skills__percentage skills__java" style="width: 80%;"></span>
                 </div>
               </div>
             </div>
@@ -538,10 +585,10 @@
               <div class="skills__data">
                 <div class="skills__titles">
                   <h3 class="skills__name">Figma</h3>
-                  <span class="skills__number">60%</span>
+                  <span class="skills__number">40%</span>
                 </div>
                 <div class="skills__bar">
-                  <span class="skills__percentage skills__figma" style="width: 60%;"></span>
+                  <span class="skills__percentage skills__figma" style="width: 40%;"></span>
                 </div>
               </div>
 
@@ -552,6 +599,16 @@
                 </div>
                 <div class="skills__bar">
                   <span class="skills__percentage skills__gimp" style="width: 80%;"></span>
+                </div>
+              </div>
+
+              <div class="skills__data">
+                <div class="skills__titles">
+                  <h3 class="skills__name">Gimp</h3>
+                  <span class="skills__number">40%</span>
+                </div>
+                <div class="skills__bar">
+                  <span class="skills__percentage skills__gimp" style="width: 40%;"></span>
                 </div>
               </div>
 
@@ -651,7 +708,7 @@
                 <span class="qualification__subtitle">Cruzeiro do Sul Virtual</span>
                 <div class="qualification__calendar">
                   <i class="uil uil-calendar-alt"></i>
-                  2023 - Atual
+                  2023 - 2025
                 </div>
               </div>
             </div>
@@ -689,32 +746,56 @@
 
               <div>
                 <h3 class="qualification__title">
-                  Desenvolvedor Júnior (Buscando Vaga)
+                  Estagiário de Desenvolvimento
                 </h3>
-                <span class="qualification__subtitle">Empresa</span>
+                <span class="qualification__subtitle">Pleantech</span>
                 <div class="qualification__calendar">
                   <i class="uil uil-calendar-alt"></i>
-                  2024 - Atual
+                  07/2024 - 02/2025
                 </div>
               </div>
             </div>
 
-            <!--==================== QUALIFICATION 3 ====================-->
-            <!-- <div class="qualification__data">
-                            <div>
-                                <h3 class="qualification__title">A preencher</h3>
-                                <span class="qualification__subtitle">Empresa</span>
-                                <div class="qualification__calendar">
-                                    <i class="uil uil-calendar-alt"></i>
-                                    2025 - 2021
-                                </div>
-                            </div>
+            <!--==================== QUALIFICATION 1 ====================-->
+            <div class="qualification__data">
+              <div>
+                <h3 class="qualification__title">
+                  Desenvolvedor Web Júnior
+                </h3>
+                <span class="qualification__subtitle">Plenatech</span>
+                <div class="qualification__calendar">
+                  <i class="uil uil-calendar-alt"></i>
+                  02/2025 - 05/2025
+                </div>
+              </div>
 
-                            <div>
-                                <span class="qualification__rounder"></span>
-                                <!-- <span class="qualification__line"></span>
-                            </div>
-                        </div> -->
+              <div>
+                <span class="qualification__rounder"></span>
+                <span class="qualification__line"></span>
+              </div>
+            </div>
+
+            <!--==================== QUALIFICATION 1 ====================-->
+            <div class="qualification__data">
+                            <div></div>
+              <div>
+                <span class="qualification__rounder"></span>
+                <span class="qualification__line"></span>
+              </div>
+
+              <div>
+                <h3 class="qualification__title">
+                  Desenvolvedor Web
+                </h3>
+                <span class="qualification__subtitle">Autônomo</span>
+                <div class="qualification__calendar">
+                  <i class="uil uil-calendar-alt"></i>
+                  05/2025 - Atual
+                </div>
+              </div>
+
+            </div>
+
           </div>
         </div>
       </div>
