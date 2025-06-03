@@ -749,6 +749,14 @@ img {
   width: 1000px!important;
 
 }
+.portfolio__video {
+  object-fit: cover;
+  border-radius: 20px;
+  border-width: 2px;
+  border-color: var(--first-color);
+  justify-content: center;
+  height: 400px;
+}
 .portfolio__data{
   display: flex;
   flex-direction: column;
@@ -1093,6 +1101,7 @@ img {
   .footer__socials {
     margin-bottom: 130px;
    }
+
 }
 
 /* For medium devices */
@@ -1243,6 +1252,9 @@ img {
 
   .portfolio__img {
     width: 320px;
+  }
+  .portfolio__video {
+    width: 100%;
   }
   .portfolio__content {
     align-items: center;

@@ -1,3 +1,8 @@
+<!--
+  Commit message:
+:house: igorlazzaretti.com
+ -->
+
 <div align="center"><img width="200" src="./assets/img/funko3.png"></div>
 
 ## Meu Site-Portfólio
@@ -37,17 +42,18 @@ Este site-portfólio foi construído inspirado no projeto de <a href="https://gi
 🎓 Análise de Sistemas - Cruzeiro do Sul <br>
 💻 Estudante FullStack: DevClub <br>
 👩🏻‍💻 Autor do Site: <a href="https://igorlazzaretti.com/">igorlazzaretti.com</a> <br>
-📚 Leitor e Estudante de Inglês <br> 
-💚 Juventudista e 🧙‍♂️ Fã de Harry Potter  <br> 
+📚 Leitor e Estudante de Inglês <br>
+💚 Juventudista e 🧙‍♂️ Fã de Harry Potter  <br>
 
+<!-- Social Banners -->
 <div align="center" >
-<img src="https://img.shields.io/badge/website-000000?style=for-the-badge&logo=About.me&logoColor=white" title="Meu Site Portifólio" alt="Meu Site Portifólio" width="110" height="27"/>
-<a href="https://www.linkedin.com/in/igorlazzaretti/"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" title="Meu Site Portifólio" alt="Meu Site Portifólio" width="110" height="26"/></a>
-<a href="https://www.instagram.com/dev.igorlzzrtt/"><img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" title="Meu Site Portifólio" alt="Meu Site Portifólio" width="110" height="25"/></a>
-<a href="https://api.whatsapp.com/send/?phone=5554999489840&text&type=phone_number&app_absent=0"><img src="https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" title="Meu Site Portifólio" alt="Meu Site Portifólio" width="110" height="26"/></a>
-<a href="https://www.youtube.com/@idLazzaretti/streams"><img src="https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white" title="Meu Site Portifólio" alt="Meu Site Portifólio" width="110" height="26"/></a>
-<a href="https://linktr.ee/dev.igorlzzrtt"><img src="https://img.shields.io/badge/linktree-39E09B?style=for-the-badge&logo=linktree&logoColor=white" title="Meu Site Portifólio" alt="Meu Site Portifólio" width="110" height="26"/></a>
 
+<a href="https://igorlazzaretti.com"><img src="https://raw.githubusercontent.com/igorlazzaretti/little-social-baner-for-github/refs/heads/main/banners/portfolio.webp" title="Meu Site Portifólio" alt="Meu Site Portifólio" width="110"/></a>
+<a href="https://www.linkedin.com/in/igorlazzaretti/"><img src="https://raw.githubusercontent.com/igorlazzaretti/little-social-baner-for-github/refs/heads/main/banners/linkedin.webp" title="Linkedin" alt="Linkedin" width="110"/></a>
+<a href="https://www.instagram.com/dev.igorlzzrtt/"><img src="https://raw.githubusercontent.com/igorlazzaretti/little-social-baner-for-github/refs/heads/main/banners/instagram.webp" title="Instagram" alt="Instagram" width="110"/></a>
+<a href="https://api.whatsapp.com/send/?phone=5554999489840&text&type=phone_number&app_absent=0"><img src="https://igorlazzaretti.github.io/social-banners-for-github/banners/whatsapp.webp" title="Whatsapp" alt="Whatsapp" width="110"/></a>
+<a href="https://www.youtube.com/@idLazzaretti/streams"><img src="https://raw.githubusercontent.com/igorlazzaretti/little-social-baner-for-github/refs/heads/main/banners/youtube.webp" title="Youtube" alt="Youtube" width="110"/></a>
+<a href="https://linktr.ee/dev.igorlzzrtt"><img src="https://raw.githubusercontent.com/igorlazzaretti/little-social-baner-for-github/refs/heads/main/banners/linktree.webp" title="Linktree" alt="Linktree" width="110"/></a>
 </div>
 
 
@@ -57,4 +63,3 @@ Este site-portfólio foi construído inspirado no projeto de <a href="https://gi
 > "Acredite nos seus sonhos" <br> - Igor Dossin Lazzaretti
 
 </div>
-
